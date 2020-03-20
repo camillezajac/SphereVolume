@@ -3,10 +3,9 @@
 
 using namespace std;
 
-// prototype
 double sphereVolume(double, const double, double);
 
-const double PI = 3.14; // global constant
+const double PI = 3.14;
 
 int main(){
 	double radius, volume;
@@ -14,7 +13,6 @@ int main(){
 	cout << "radius: " << endl;
 	cin >> radius;
 
-	// function call
 	volume = sphereVolume(radius, PI, volume);
 
 	cout << "Volume: " << volume << endl;
@@ -23,7 +21,6 @@ int main(){
 }
 
 double sphereVolume(double radius, const double PI, double volume){
-	// calculate volume
 	volume = PI*(4.0/3.0)*pow(radius, 3);
 	return volume;
 }
